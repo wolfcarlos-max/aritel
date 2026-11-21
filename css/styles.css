@@ -57,6 +57,7 @@ main > section { width: min(var(--width), calc(100% - 32px)); margin-inline: aut
   border-radius: 999px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
+
 .logo { display: block; line-height: 0; }
 .logo img { height: 34px; width: auto; }
 .nav-links {
@@ -213,34 +214,7 @@ h6 {
 }
 
 
-/* NAVBAR STYLES */
-.navbar-custom {
-    background-color: #000000;
-    border-radius: 30px;
-    margin: 12px auto;
-    width: 88%;
-    min-height: 35px;
-    padding: 5px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.navbar-custom .logo {
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.navbar-custom a {
-    color: white;
-    text-decoration: none;
-    font-size: 11px;
-}
-
-.navbar-custom a:hover {
-    color: var(--primary);
-}
 
 
 /* =========================
@@ -250,12 +224,12 @@ h6 {
 /* WEBPAGE HEADER */
 .page-header {
     background-image: url("../images/home/banner-footer.png");
-    background-size: 140%;
-    background-position: top left;
-    background-repeat: no-repeat;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 25px 10px 12px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .page-header h1 {
@@ -1067,5 +1041,483 @@ h6 {
     .recommended-btn {
         width: 100%;
     }
+}
+
+
+/* =========================
+   Contact Page Design
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body.contact-page {
+    margin: 0;
+    background-color: #F7F7F7;
+    color: #222B2D;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+/* CONTACT PAGE HERO */
+.contact-page .page-header {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-page .page-header h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-page .page-header h5 {
+    font-size: 1rem;
+}
+
+
+
+
+
+/* CONTACT US PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body.contact-page {
+    margin: 0;
+    background-color: #F7F7F7;
+    color: #222B2D;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-page p,
+.contact-page label,
+.contact-page input,
+.contact-page textarea {
+    font-family: 'Martel Sans', sans-serif;
+}
+
+/* CONTACT HERO */
+
+.contact-page .contact-hero {
+    background-image: url("images/header.png");
+    background-color: #B09E90;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+    color: #222B2D;
+}
+
+.contact-page .contact-hero h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.contact-page .contact-hero p {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* CONTACT FORM SECTION */
+
+.contact-page .contact-form-section {
+    padding: 80px 20px;
+}
+
+.contact-page .contact-form-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.contact-page .contact-form-container h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #BC0202;
+    margin-bottom: 35px;
+}
+
+
+
+/* FORM INPUTS */
+
+.contact-page .form-control {
+    width: 100%;
+    min-height: 60px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+
+    background-color: #F7F7F7;
+    border: 1px solid #B09E90;
+    border-radius: 999px;
+
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222B2D;
+}
+
+/* CONTACT FORM INPUTS */
+.contact-page .form-control {
+    background-color: #ececec;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    color: #222B2D;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 0.85rem;
+}
+
+/* PLACEHOLDER TEXT */
+.contact-page .form-control::placeholder {
+    color: #777;
+    opacity: 1;
+}
+
+/* INPUT FOCUS */
+.contact-page .form-control:focus {
+    background-color: #f5f5f5;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* FORM HEADING */
+.contact-page .contact-form-container h2 {
+    color: #BC0202;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.contact-page .form-control::placeholder {
+    color: #77716B;
+    opacity: 1;
+}
+
+.contact-page textarea.form-control {
+    height: 100px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-page .form-control:focus {
+    border-color: #BC0202;
+    outline: none;
+    box-shadow: 0 0 5px rgba(188, 2, 2, 0.2);
+}
+
+/* PRIVACY CHECKBOX */
+
+.contact-page .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-page .form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    border: 1px solid #222B2D;
+    cursor: pointer;
+}
+
+.contact-page .form-check-input:checked {
+    background-color: #BC0202;
+    border-color: #BC0202;
+}
+
+.contact-page .form-check-label {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 14px;
+    color: #222B2D;
+}
+
+.contact-page .form-check-label a {
+    color: #BC0202;
+    text-decoration: underline;
+}
+
+/* SEND MESSAGE BUTTON */
+
+.contact-page .send-btn {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 14px auto 0;
+    padding: 8px 40px;
+
+    background-color: var(--primary);
+    color: #F7F7F7;
+    border: none;
+    border-radius: 999px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page .send-btn:hover {
+    background-color: var(--secondary-1);
+}
+
+.contact-page .send-btn:hover {
+    background-color: #222B2D;
+}
+
+/* FAQ HEADING */
+.contact-page .faq-section h2 {
+    color: #BC0202;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-page .faq-section {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 40px;
+}
+
+.contact-page .faq-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #BC0202 !important;
+    margin-bottom: 25px;
+}
+
+.contact-page .faq-item {
+    border-bottom: 1px solid #B09E90;
+    padding: 20px 0;
+}
+
+.contact-page .faq-item h3 {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #BC0202;
+    margin: 0;
+}
+
+.contact-page .faq-item p {
+    font-size: 15px;
+    color: #222B2D;
+    margin-top: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 767px) {
+
+    /* NAVBAR */
+    .contact-page .aritel-logo {
+        width: 120px;
+    }
+
+    .contact-page .navbar-nav {
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    /* HERO */
+    .contact-page .contact-hero {
+        min-height: 280px;
+        padding: 45px 15px;
+    }
+
+    .contact-page .contact-hero h1 {
+        font-size: 42px;
+    }
+
+    .contact-page .contact-hero p {
+        font-size: 15px;
+    }
+
+	/* FORM */
+	.contact-page .contact-form-section {
+		padding: 45px 10px;
+}
+
+	.contact-page .contact-form-container {
+		width: 100%;
+		max-width: 850px;
+		margin: 0 auto;
+		padding: 45px;
+		background-color: #FFFFFF;
+		border-radius: 25px;
+}
+
+    .contact-page .contact-form-container h2 {
+        font-size: 24px;
+    }
+
+    .contact-page .form-control {
+        min-height: 52px;
+        font-size: 15px;
+    }
+
+   .contact-page textarea.form-control {
+		height: 100px !important;
+		min-height: 100px !important;
+}
+
+    .contact-page .form-check-label {
+        font-size: 13px;
+    }
+
+    .contact-page .send-btn {
+        font-size: 16px;
+    }
+
+    /* FAQ */
+    .contact-page .faq-section {
+        padding: 45px 10px;
+    }
+
+    .contact-page .faq-section h2 {
+        font-size: 24px;
+		color: #BC0202;
+    }
+
+    .contact-page .faq-question {
+        font-size: 16px;
+        padding: 18px 10px;
+    }
+
+    .contact-page .faq-icon {
+        font-size: 23px;
+    }
+
+    /* FOOTER */
+    .contact-page .footer-content {
+        gap: 25px;
+    }
+
+    .contact-page .footer-brand,
+    .contact-page .footer-contact,
+    .contact-page .footer-links {
+        width: 100%;
+    }
+
+    .contact-page .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .contact-page .back-to-top {
+        right: 20px;
+    }
+
+    .contact-page .back-to-top-label {
+        right: 15px;
+    }
+}
+/* FAQ SECTION */
+
+.contact-page .faq-section {
+    padding: 70px 0;
+    background-color: #F7F7F7;
+}
+
+.contact-page .faq-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #222B2D;
+    margin-bottom: 35px;
+}
+
+.contact-page .faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-page .faq-item {
+    border-bottom: 1px solid #B09E90;
+}
+
+.contact-page .faq-question {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 25px;
+    text-align: left;
+    color: #222B2D;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-page .faq-icon {
+    font-size: 28px;
+    font-weight: 400;
+    color: #BC0202;
+    margin-left: 20px;
+}
+
+.contact-page .faq-answer {
+    display: none;
+    padding: 0 10px 20px;
+    color: #222B2D;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 15px;
+}
+
+.contact-page .faq-answer p {
+    margin: 0;
+}
+
+.contact-page .faq-note {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #222B2D;
 }
 
