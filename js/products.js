@@ -7,7 +7,7 @@ const products = {
 
     product2: {
         name: "Everyday Comfort Tee",
-        price: 599,
+        price: 499,
         image: "images/second-product/product-2.png",
     },
 
