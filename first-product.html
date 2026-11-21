@@ -17,10 +17,10 @@
   <nav class="main-nav" aria-label="Main navigation">
     <a class="logo" href="index.html"><img src="images/home/logo.png" alt="ARITEL home"></a>
     <ul class="nav-links">
-      <li><a href="#story">About</a></li>
+      <li><a href="index.html">About</a></li>
       <li><a href="#recommended">Shop</a></li>
       <li><a href="contact-us.html">Contact</a></li>
-      <li><a href="privacy.html">Privacy and Terms</a></li>
+      <li><a href="privacy-policy.html">Privacy and Terms</a></li>
     </ul>
     <ul class="nav-icons">
       <li>
@@ -66,32 +66,41 @@
             </div>
 
 
+            <!-- COLOR OPTIONS -->
+            <p>Select color:</p>
             <div class="color-options">
-                <div class="color-circle color-red"></div>
-                <div class="color-circle color-black"></div>
-                <div class="color-circle color-beige"></div>
+                <button type="button" class="color-circle color-red"
+                    data-color="Red" aria-label="Red" aria-pressed="false"></button>
+
+                <button type="button" class="color-circle color-black"
+                    data-color="Black" aria-label="Black" aria-pressed="false"></button>
+
+                <button type="button" class="color-circle color-beige"
+                    data-color="Beige" aria-label="Beige" aria-pressed="false"></button>
             </div>
 
-            <label>Select size:</label>
+            <!-- SIZE OPTIONS -->
+            <p>Select size:</p>
             <div class="size-options">
-                <button class="size-btn" type="button">S</button>
-                <button class="size-btn" type="button">M</button>
-                <button class="size-btn" type="button">L</button>
+                <button type="button" class="size-btn" data-size="S">S</button>
+                <button type="button" class="size-btn" data-size="M">M</button>
+                <button type="button" class="size-btn" data-size="L">L</button>
             </div>
 
-            <label>Quantity:</label>
+            <!-- QUANTITY -->
+            <p>Quantity:</p>
             <div class="quantity-options">
-                <button class="quantity-btn" type="button">-</button>
-                <button class="quantity-number" type="button">1</button>
-                <button class="quantity-btn" type="button">+</button>
+                <button type="button" class="quantity-btn" id="decrease">-</button>
+
+                <span class="quantity-number" id="quantity">1</span>
+
+                <button type="button" class="quantity-btn" id="increase">+</button>
             </div>
 
+            <!-- PRODUCT ACTION BUTTONS -->
             <div class="product-buttons">
-                <button class="add-cart-btn" type="button">Add to Cart</button>
-                <button class="buy-now-btn" type="button" onclick="orderProduct()">
-                    Order Now
-                </button>
-                
+                <button type="button" class="add-cart-btn">Add to Cart</button>
+                <button type="button" class="buy-now-btn" id="orderNow">Order Now</button>
             </div>
 
         </div>
@@ -239,6 +248,7 @@
     <!-- JAVASCRIPT -->
     <script src="js/products.js"></script>
     <script src="js/product-page.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
