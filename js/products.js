@@ -14,6 +14,6 @@ const products = {
     product3: {
         name: "Do Good Work Tee",
         price: 499,
-        image: "images/product-3.png",
+        image: "images/third-product/product-3.png",
     }
 };
