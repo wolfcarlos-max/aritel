@@ -72,7 +72,7 @@ orderButton.addEventListener("click", function () {
     }
 
     // Product information
-    const productName = "Don't Be Late Tee";
+const productName = document.getElementById("product-name").textContent.trim();
     const productPrice = 499;
     const totalPrice = productPrice * quantity;
 

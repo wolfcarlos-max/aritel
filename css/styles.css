@@ -146,7 +146,7 @@ main > section { width: min(var(--width), calc(100% - 32px)); margin-inline: aut
   min-height: 220px;
   margin-block: 24px 48px;
   padding: 24px 40px;
-  background: #ece7de url("..images/home/banner-header.png") right center / cover no-repeat;
+  background: #ece7de url("../images/home/banner-footer.png") right center / cover no-repeat;
   border-radius: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
   display: grid;
@@ -304,6 +304,13 @@ h6 {
     text-align: center;
 }
 
+.page-subsubheading{
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+} 
 /* =========================
     HOME PAGE DESIGN
 ========================= */
@@ -1572,3 +1579,214 @@ body.contact-page {
     color: #222B2D;
 }
 
+
+/* =========================
+   PRIVACY & TERMS PAGE
+========================= */
+
+.privacy-page {
+    background-color: #fff;
+    color: #222B2D;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+/* PAGE HEADER */
+
+.privacy-page .page-header p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 3px 0;
+    color: #222B2D;
+}
+
+.privacy-page-subheading{
+    margin-top: 90px;
+}
+
+/* POLICY SECTIONS */
+.privacy-page .policy-section.container {
+    width: min(1180px, calc(100% - 80px));
+    max-width: none;
+    padding: 12px 0 0;
+    margin: 0 auto;
+}
+
+.privacy-page .policy-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 0 0 10px;
+}
+
+/* POLICY CARDS */
+.privacy-page .policy-card {
+    height: 116px;
+    padding: 12px 14px 8px;
+    border: 1px solid #aaa;
+    border-radius: 18px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    grid-template-rows: auto 1fr auto;
+    column-gap: 8px;
+    overflow: hidden;
+}
+
+.privacy-page .policy-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.privacy-page .policy-card h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    color: #000;
+    margin: 0;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.privacy-page .policy-card p {
+    grid-column: 1 / -1;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 8px;
+    line-height: 1.35;
+    color: #222;
+    margin: 8px 0 0;
+}
+
+.privacy-page .policy-card .collapse p {
+    margin-top: 5px;
+}
+
+.privacy-page .policy-card > a {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    font-size: 7px;
+    line-height: 1;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.privacy-page .policy-card > a:hover {
+    color: var(--primary);
+}
+
+/* BOOTSTRAP CARD ROW */
+.privacy-page .policy-section .row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+}
+
+/* AGREEMENT CHECKBOXES */
+.privacy-page .policy-agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.privacy-page .policy-agree .form-check-input {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    border: 1px solid #777;
+    border-radius: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.privacy-page .policy-agree .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.privacy-page .policy-agree .form-check-label {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 8px;
+    color: #222;
+}
+
+/* TERMS SECTION SPACING */
+.privacy-page #terms-and-conditions {
+    padding-top: 8px;
+}
+
+/* QUESTIONS SECTION */
+.privacy-page .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 18px auto 6px;
+}
+
+.privacy-page .questions p {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.privacy-page .questions .btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 28px;
+    border-radius: 999px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 767px) {
+
+    .privacy-page .page-header {
+        min-height: 190px;
+        padding: 80px 16px 20px;
+    }
+
+    .privacy-page .page-header h1 {
+        font-size: 28px;
+    }
+
+    .privacy-page .page-header .page-subsubheading {
+        max-width: 450px;
+    }
+
+    .privacy-page .policy-section.container {
+        width: calc(100% - 32px);
+    }
+
+    .privacy-page .policy-section h2 {
+        font-size: 19px;
+    }
+
+    .privacy-page .policy-card {
+        height: 130px;
+    }
+
+    .privacy-page .policy-card h3 {
+        font-size: 12px;
+    }
+
+    .privacy-page .policy-card p {
+        font-size: 9px;
+    }
+
+    .privacy-page .policy-agree .form-check-label {
+        font-size: 9px;
+    }
+
+    .privacy-page .questions {
+        margin-bottom: 24px;
+    }
+}
