@@ -10,6 +10,9 @@
     --secondary-1: #222B2D;
     --secondary-2: #B09E90;
     --neutral: #F7F7F7;
+    --red-dark: #7a0000;
+    --cream: #ece7de;
+    --width: 1180px;
 }
 
 
@@ -64,6 +67,95 @@
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+/* ---------- LET'S CONNECT ---------- */
+.connect {
+  min-height: 220px;
+  margin-block: 24px 48px;
+  padding: 24px 40px;
+  background: #ece7de url("../images/home/banner-footer.png") right center / cover no-repeat;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 4px;
+}
+.connect > * { margin: 0; }
+.connect .eyebrow { color: var(--primary); text-transform: none; font-size: 1.2rem; font-weight: 700; }
+.connect h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; line-height: 1.1; }
+.connect .btn {
+    margin-top: 20px;
+    padding: 6px 22px;
+    border-radius: 999px;
+    font-size: .9rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  position: relative;
+  padding: 40px max(16px, calc((100% - var(--width)) / 2)) 20px;
+  background: var(--secondary-1);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr .7fr;
+  gap: 24px;
+}
+.site-footer p, .site-footer address { margin: 0; font-style: normal; }
+.site-footer a { color: #fff; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+
+.footer-brand img { width: auto; margin-bottom: 12px; }
+.footer-brand p { margin-bottom: 4px; }
+
+.site-footer h2 { margin: 0 0 6px; font-size: .8rem; font-weight: 400; color: #cfd2d4; }
+.footer-info address { margin-bottom: 18px; }
+.social { display: flex; gap: 10px; }
+.social a { display: block; }
+.footer-links li { padding: 2px 0; }
+.footer-links a { text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; }
+
+.footer-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #666;
+  font-size: .85rem;
+  font-weight: 700;
+}
+.footer-bottom a { text-decoration: none; }
+.footer-bottom a:hover { text-decoration: underline; }
+
+/* red round back-to-top button */
+.back-to-top {
+  position: absolute;
+  top: -20px;
+  right: max(16px, calc((100% - var(--width)) / 2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: .7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.back-to-top .arrow {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 /* HEADER STYLES */
