@@ -15,18 +15,18 @@
       <a class="logo" href="index.html"><img src="images/privacy-policy/logo.png" alt="ARITEL home"></a>
       <ul class="nav-links">
         <li><a href="index.html#story">About</a></li>
-        <li><a href="index.html#products">Shop</a></li>
+        <li><a href="first-product.html">Shop</a></li>
         <li><a href="contact-us.html">Contact</a></li>
         <li><a href="privacy-policy.html" aria-current="page">Privacy and Terms</a></li>
       </ul>
       <ul class="nav-icons">
         <li>
-  <a href="#products" aria-label="Shop our t-shirts">
+  <a href="first-product.html" aria-label="Shop our t-shirts">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
         </a>
       </li>
       <li>
-        <a href="contact.html" aria-label="Contact us">
+        <a href="contact-us.html" aria-label="Contact us">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
         </a>
         </li>
@@ -56,7 +56,14 @@
             <div class="collapse" id="info-we-collect-details">
               <p>We only collect the information we need to process your orders and support you.</p>
             </div>
-            <a href="#info-we-collect-details" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="info-we-collect-details">View more<span class="visually-hidden"> about information we collect</span>...</a>
+<a href="#info-we-collect-details"
+   role="button"
+   data-bs-toggle="collapse"
+   aria-expanded="false"
+   aria-controls="info-we-collect-details"
+   onclick="this.textContent = this.getAttribute('aria-expanded') === 'true' ? 'View more...' : 'View less';">
+   View more...
+</a>
           </article>
         </div>
 
@@ -66,9 +73,9 @@
             <h3>USE OF INFORMATION</h3>
             <p>Aritel uses customer information to process and confirm orders, manage payments,
               arrange deliveries, and provide customer support. We may also use this information
-              to communicate important updates regarding purchases, respond to inquiries, and improve ...</p>
+              to communicate important updates regarding purchases, respond to inquiries, and improve </p>
             <div class="collapse" id="use-of-information-details">
-              <p>...our products, services, and overall shopping experience.</p>
+              <p>our products, services, and overall shopping experience.</p>
             </div>
             <a href="#use-of-information-details" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="use-of-information-details">View more<span class="visually-hidden"> about use of information</span>...</a>
           </article>
@@ -102,13 +109,13 @@
       <div class="row g-4">
         <div class="col-md-4">
           <article class="policy-card">
-            <img src="images/privacy-policy/products-services.png" alt="" width="40" height="40">
+            <img src="images/privacy-policy/products-&-services.png" alt="" width="40" height="40">
             <h3>PRODUCTS &amp; SERVICES</h3>
             <p>Our company offers a diverse range of products and services to meet your needs.
               We carefully select each product for quality and performance, ensuring you get the
-              best value for your purchase. We provide detailed descriptions ...</p>
+              best value for your purchase. We provide detailed descriptions </p>
             <div class="collapse" id="products-services-details">
-              <p>...and images for every item. Colors may vary slightly depending on your screen.</p>
+              <p>and images for every item. Colors may vary slightly depending on your screen.</p>
             </div>
             <a href="#products-services-details" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="products-services-details">View more<span class="visually-hidden"> about products and services</span>...</a>
           </article>
@@ -116,7 +123,7 @@
 
         <div class="col-md-4">
           <article class="policy-card">
-            <img src="images/privacy-policy/orders-payments.png" alt="" width="40" height="40">
+            <img src="images/privacy-policy/orders-&-payment.png" alt="" width="40" height="40">
             <h3>ORDERS &amp; PAYMENTS</h3>
             <p>All orders placed through Aritel are subject to confirmation and product availability.
               Customers are responsible for providing accurate order details and completing payments
@@ -130,14 +137,14 @@
 
         <div class="col-md-4">
           <article class="policy-card">
-            <img src="images/privacy-policy/shipping-returns.png" alt="" width="40" height="40">
+            <img src="images/privacy-policy/shipping-&-returns.png" alt="" width="40" height="40">
             <h3>SHIPPING &amp; RETURNS</h3>
             <p>Aritel aims to process and deliver orders within the estimated delivery timeframe
               provided at checkout. Shipping fees and delivery schedules may vary depending on the
               customer's location. Returns and exchanges may be requested for defective, damaged,
-              or incorrect items, ...</p>
+              or incorrect items, </p>
             <div class="collapse" id="shipping-returns-details">
-              <p>...subject to review by our team.</p>
+              <p>subject to review by our team.</p>
             </div>
             <a href="#shipping-returns-details" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="shipping-returns-details">View more<span class="visually-hidden"> about shipping and returns</span>...</a>
           </article>
@@ -153,7 +160,7 @@
     <!-- QUESTIONS -->
     <section class="questions" aria-labelledby="questions-heading">
       <p id="questions-heading">Questions or Concerns?</p>
-      <a class="btn btn-pill" href="contact.html">Send Message</a>
+      <a class="btn btn-pill" href="contact-us.html">Send Message</a>
   </section>
   </main>
 
@@ -199,5 +206,20 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll('.policy-card .collapse').forEach(collapse => {
+    const card = collapse.closest('.policy-card');
+
+    collapse.addEventListener('show.bs.collapse', function () {
+        card.classList.add('expanded');
+        card.querySelector(':scope > a').textContent = 'View less...';
+    });
+
+    collapse.addEventListener('hide.bs.collapse', function () {
+        card.classList.remove('expanded');
+        card.querySelector(':scope > a').textContent = 'View more...';
+    });
+});
+</script>
 </body>
 </html>

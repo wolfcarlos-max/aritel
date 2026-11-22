@@ -42,7 +42,7 @@ main > section { width: min(var(--width), calc(100% - 32px)); margin-inline: aut
 .btn:hover { background: var(--red-dark); border-color: var(--red-dark); color: #fff; }
 .btn-pill { border-radius: 999px; padding: 10px 28px; }
 
-/* SELECTED COLOR */
+
 /* COLOR OPTIONS */
 .color-circle {
     width: 60px;
@@ -146,7 +146,7 @@ main > section { width: min(var(--width), calc(100% - 32px)); margin-inline: aut
   min-height: 220px;
   margin-block: 24px 48px;
   padding: 24px 40px;
-  background: #ece7de url("../images/home/banner-footer.png") right center / cover no-repeat;
+  background: var(--neutral) url("../images/home/banner-footer.png") right center / cover no-repeat;
   border-radius: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
   display: grid;
@@ -826,7 +826,7 @@ h6 {
 /* SIZE BUTTONS */
 .size-btn {
     background-color: #D9D9D9;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-size: 25px;
     font-weight: bold;
     width: 80px;
@@ -866,7 +866,7 @@ h6 {
 
 .quantity-number {
     background-color: #D9D9D9;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
 
@@ -923,7 +923,7 @@ h6 {
     gap: 10px;
     width: 70%;
     margin: 0;
-    margin-left: 290px;
+    margin-left: 240px;
 }
 
 .gallery-image {
@@ -1113,7 +1113,7 @@ h6 {
 body.contact-page {
     margin: 0;
     background-color: #F7F7F7;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Lato', sans-serif;
 }
 
@@ -1153,7 +1153,7 @@ body.contact-page {
 body.contact-page {
     margin: 0;
     background-color: #F7F7F7;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Lato', sans-serif;
 }
 
@@ -1187,7 +1187,7 @@ body.contact-page {
 
     text-align: center;
     padding: 60px 20px;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
 .contact-page .contact-hero h1 {
@@ -1243,7 +1243,7 @@ body.contact-page {
     font-family: 'Martel Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
 /* CONTACT FORM INPUTS */
@@ -1252,7 +1252,7 @@ body.contact-page {
     border: none;
     border-radius: 25px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Martel Sans', sans-serif;
     font-size: 0.85rem;
 }
@@ -1322,7 +1322,7 @@ body.contact-page {
 .contact-page .form-check-label {
     font-family: 'Martel Sans', sans-serif;
     font-size: 14px;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
 .contact-page .form-check-label a {
@@ -1399,7 +1399,7 @@ body.contact-page {
 
 .contact-page .faq-item p {
     font-size: 15px;
-    color: #222B2D;
+    color: var(--secondary-1);
     margin-top: 10px;
 }
 
@@ -1522,7 +1522,7 @@ body.contact-page {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     font-weight: 900;
-    color: #222B2D;
+    color: var(--secondary-1);
     margin-bottom: 35px;
 }
 
@@ -1546,7 +1546,7 @@ body.contact-page {
     border: none;
     border-radius: 25px;
     text-align: left;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Martel Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1563,7 +1563,7 @@ body.contact-page {
 .contact-page .faq-answer {
     display: none;
     padding: 0 10px 20px;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Martel Sans', sans-serif;
     font-size: 15px;
 }
@@ -1576,7 +1576,7 @@ body.contact-page {
     text-align: left;
     margin-top: 25px;
     font-size: 15px;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
 
@@ -1586,7 +1586,7 @@ body.contact-page {
 
 .privacy-page {
     background-color: #fff;
-    color: #222B2D;
+    color: var(--secondary-1);
     font-family: 'Martel Sans', sans-serif;
 }
 
@@ -1594,13 +1594,13 @@ body.contact-page {
 
 .privacy-page .page-header p {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 3px 0;
-    color: #222B2D;
+    color: var(--secondary-1);
 }
 
-.privacy-page-subheading{
-    margin-top: 90px;
+.privacy-page .page-header p.privacy-page-subheading {
+    transform: translateY(50px);
 }
 
 /* POLICY SECTIONS */
@@ -1617,12 +1617,14 @@ body.contact-page {
     font-weight: 900;
     color: var(--primary);
     margin: 0 0 10px;
+    margin-top: 50px;
 }
 
 /* POLICY CARDS */
 .privacy-page .policy-card {
-    height: 116px;
-    padding: 12px 14px 8px;
+    height: 150px;
+    min-height: 150px;
+    padding: 12px 14px;
     border: 1px solid #aaa;
     border-radius: 18px;
     background: #fff;
@@ -1631,6 +1633,13 @@ body.contact-page {
     grid-template-rows: auto 1fr auto;
     column-gap: 8px;
     overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.privacy-page .policy-card.expanded {
+    height: auto;
+    min-height: 150px;
+    overflow: visible;
 }
 
 .privacy-page .policy-card img {
@@ -1643,9 +1652,9 @@ body.contact-page {
 
 .privacy-page .policy-card h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 11px;
+    font-size: 20px;
     font-weight: 900;
-    color: #000;
+    color: var(--secondary-1);
     margin: 0;
     grid-column: 2;
     grid-row: 1;
@@ -1655,9 +1664,9 @@ body.contact-page {
 .privacy-page .policy-card p {
     grid-column: 1 / -1;
     font-family: 'Martel Sans', sans-serif;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.35;
-    color: #222;
+    color: var(--secondary-1);
     margin: 8px 0 0;
 }
 
@@ -1677,6 +1686,17 @@ body.contact-page {
 
 .privacy-page .policy-card > a:hover {
     color: var(--primary);
+}
+
+/* Keep expanded text aligned with the card content */
+.privacy-page .policy-card .collapse {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.privacy-page .policy-card .collapse p {
+    width: 100%;
+    margin-top: 8px;
 }
 
 /* BOOTSTRAP CARD ROW */
@@ -1713,13 +1733,13 @@ body.contact-page {
 
 .privacy-page .policy-agree .form-check-label {
     font-family: 'Martel Sans', sans-serif;
-    font-size: 8px;
-    color: #222;
+    font-size: 10px;
+    color: var(--secondary-1);
 }
 
 /* TERMS SECTION SPACING */
 .privacy-page #terms-and-conditions {
-    padding-top: 8px;
+    padding-top: 70px;
 }
 
 /* QUESTIONS SECTION */
@@ -1729,18 +1749,21 @@ body.contact-page {
     align-items: center;
     text-align: center;
     margin: 18px auto 6px;
+    margin-bottom: 100px;
+    margin-top: 25px;
 }
 
 .privacy-page .questions p {
     font-family: 'Martel Sans', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 5px;
 }
 
 .privacy-page .questions .btn {
+    margin-top: 10px;
     font-family: 'Lato', sans-serif;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     padding: 5px 28px;
     border-radius: 999px;
