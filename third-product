@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do Good Work Tee | ARITEL</title>
+  <meta name="description" content="Do Good Work Tee from ARITEL Filipino streetwear. ₱499. Choose your color, size and quantity, then order by email.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="product-page" data-product="product3">
+  <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+  <nav class="main-nav" aria-label="Main navigation">
+    <a class="logo" href="index.html"><img src="images/home/logo.png" alt="ARITEL home" width="270" height="120"></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html#story">About</a></li>
+      <li><a href="index.html#products">Shop</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy and Terms</a></li>
+    </ul>
+    <ul class="nav-icons">
+      <li>
+        <a href="index.html#products" class="cart-link" id="cart-link" aria-label="Cart, empty. Shop our t-shirts">
+          <span class="cart-count" id="cart-count" aria-hidden="true" hidden>0</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="contact-us.html" aria-label="Contact us">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <h1>SHOP</h1>
+      <p class="page-lead">Drop by and see what&rsquo;s new!</p>
+    </div>
+
+    <section aria-labelledby="collection-heading">
+      <h2 class="page-subheading" id="collection-heading">Product Collection</h2>
+    </section>
+
+    <!-- MAIN PRODUCT SECTION -->
+    <section class="product-container" aria-label="Do Good Work Tee details">
+
+      <!-- LEFT: PRODUCT IMAGE -->
+      <div class="product-image">
+        <img id="product-image" src="images/third-product/product-3.png" alt="Beige Do Good Work tee with colorful lettering filled with scenes of people working" width="900" height="900">
+      </div>
+
+      <!-- RIGHT: PRODUCT DETAILS -->
+      <div class="product-details">
+        <h3 class="product-name" id="product-name">Do Good Work Tee</h3>
+
+        <div class="price-size-container">
+          <p class="product-price" id="product-price">&#8369; 499</p>
+          <button type="button" class="size-chart" data-bs-toggle="modal" data-bs-target="#sizeChartModal">Size Chart</button>
+        </div>
+
+        <!-- COLOR OPTIONS -->
+        <div class="color-options" role="group" aria-label="Select color">
+          <button type="button" class="color-circle color-red" data-color="Red" aria-label="Red" aria-pressed="false"></button>
+          <button type="button" class="color-circle color-black" data-color="Black" aria-label="Black" aria-pressed="false"></button>
+          <button type="button" class="color-circle color-beige" data-color="Beige" aria-label="Beige" aria-pressed="false"></button>
+        </div>
+
+        <!-- SIZE OPTIONS -->
+        <p class="option-label" id="size-label">Select size:</p>
+        <div class="size-options" role="group" aria-labelledby="size-label">
+          <button type="button" class="size-btn" data-size="S" aria-pressed="false">S</button>
+          <button type="button" class="size-btn" data-size="M" aria-pressed="false">M</button>
+          <button type="button" class="size-btn" data-size="L" aria-pressed="false">L</button>
+        </div>
+
+        <!-- QUANTITY -->
+        <p class="option-label" id="quantity-label">Quantity:</p>
+        <div class="quantity-options" role="group" aria-labelledby="quantity-label">
+          <button type="button" class="quantity-btn" id="decrease" aria-label="Decrease quantity">-</button>
+          <span class="quantity-number" id="quantity" role="status" aria-live="polite">1</span>
+          <button type="button" class="quantity-btn" id="increase" aria-label="Increase quantity">+</button>
+        </div>
+
+        <!-- PRODUCT ACTION BUTTONS -->
+        <div class="product-buttons">
+          <button type="button" class="add-cart-btn" id="addToCart">Add to Cart</button>
+          <button type="button" class="buy-now-btn" id="orderNow">Order Now</button>
+        </div>
+        <p class="order-message" id="order-message" role="alert"></p>
+      </div>
+    </section>
+
+    <!-- PRODUCT DETAILS SECTION -->
+    <section class="product-info-section container-fluid" aria-label="Product photos and description">
+      <div class="row align-items-start">
+
+        <!-- LEFT SIDE: PRODUCT IMAGES -->
+        <div class="col-md-6">
+          <div class="product-gallery">
+            <button type="button" class="gallery-image active" data-image="images/third-product/product-3-1st.png" data-alt="Do Good Work Tee – front view" aria-pressed="true">
+              <img src="images/third-product/product-3-1st.png" alt="Show front view of Do Good Work Tee" width="600" height="600" loading="lazy">
+            </button>
+            <button type="button" class="gallery-image" data-image="images/third-product/product-3-2nd.png" data-alt="Do Good Work Tee – back view" aria-pressed="false">
+              <img src="images/third-product/product-3-2nd.png" alt="Show back view of Do Good Work Tee" width="600" height="600" loading="lazy">
+            </button>
+            <button type="button" class="gallery-image" data-image="images/third-product/product-3-3rd.png" data-alt="Do Good Work Tee – side view" aria-pressed="false">
+              <img src="images/third-product/product-3-3rd.png" alt="Show side view of Do Good Work Tee" width="600" height="600" loading="lazy">
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: PRODUCT DESCRIPTION -->
+        <div class="col-md-6">
+          <div class="product-description">
+            <h4>Product detail:</h4>
+            <p><strong>Do Good Work Tee</strong> is a unisex regular fit made from 100% washed cotton, showcasing the proverb “Kapag may itinanim, may aanihin.” A daily reminder to give your best, hindi ‘yung “pwede na ‘yan” o “bahala na si boss mag-check.” Kasi ang effort mo ngayon, ikaw rin ang aani bukas.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- YOU MAY ALSO LIKE -->
+    <section class="recommended-section container" id="recommended" aria-labelledby="recommended-title">
+      <h2 class="recommended-title" id="recommended-title">You may also like...</h2>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-md-6">
+          <article class="recommended-card">
+            <h3>Don’t Be Late Tee</h3>
+            <p class="recommended-price">&#8369; 499</p>
+            <img src="images/first-product/product-1w.png" alt="Don’t Be Late Tee" width="900" height="900" loading="lazy">
+            <a href="first-product.html" class="btn recommended-btn">View Details<span class="visually-hidden"> of Don’t Be Late Tee</span></a>
+          </article>
+        </div>
+
+        <div class="col-md-6">
+          <article class="recommended-card">
+            <h3>Everyday Comfort Tee</h3>
+            <p class="recommended-price">&#8369; 499</p>
+            <img src="images/second-product/product-2w.png" alt="Everyday Comfort Tee" width="900" height="900" loading="lazy">
+            <a href="second-product.html" class="btn recommended-btn">View Details<span class="visually-hidden"> of Everyday Comfort Tee</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section class="connect" aria-labelledby="connect-title">
+      <p class="eyebrow">Wear your roots, Own Your Story</p>
+      <h2 id="connect-title">Shop now! Here in Aritel.</h2>
+      <a class="btn" href="contact-us.html">Contact Us</a>
+    </section>
+
+    <!-- SIZE CHART (opens from the Size Chart button) -->
+    <div class="modal fade" id="sizeChartModal" tabindex="-1" aria-labelledby="sizeChartTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="sizeChartTitle">Size Chart</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close size chart"></button>
+          </div>
+          <div class="modal-body">
+            <p>Our tees have a relaxed, oversized fit. Measurements are in inches.</p>
+            <table class="table table-bordered text-center mb-0">
+              <caption class="visually-hidden">Size chart for Do Good Work Tee</caption>
+              <thead><tr><th scope="col">Size</th><th scope="col">Chest width</th><th scope="col">Length</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">S</th><td>21</td><td>27</td></tr>
+                <tr><th scope="row">M</th><td>22</td><td>28</td></tr>
+                <tr><th scope="row">L</th><td>23</td><td>29</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <a class="back-to-top" href="#top">
+    <span class="arrow" aria-hidden="true">&#8593;</span>
+    <span>Back To Top</span>
+  </a>
+
+  <div class="footer-brand">
+    <a href="index.html"><img src="images/home/logo.png" alt="ARITEL home" width="270" height="120"></a>
+    <p>Wear your roots, own your story.</p>
+    <p>Got questions? Visit the <a href="contact-us.html">Aritel Support Center</a></p>
+  </div>
+
+  <div class="footer-info">
+    <h2>Our Head Office</h2>
+    <address>45 Katipunan Avenue, Quezon City, Philippines</address>
+
+    <h2>Connect With Us</h2>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/home/icon-facebook.png" alt="Aritel on Facebook (opens in a new tab)" width="20" height="20"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/home/icon-instagram.png" alt="Aritel on Instagram (opens in a new tab)" width="20" height="20"></a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/home/icon-linkedin.png" alt="Aritel on LinkedIn (opens in a new tab)" width="20" height="20"></a></li>
+    </ul>
+  </div>
+
+  <nav class="footer-links" aria-label="Footer navigation">
+    <h2>Quicklinks</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#products">Shop</a></li>
+      <li><a href="index.html#story">About</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Aritel. All rights reserved.</p>
+    <a href="privacy-policy.html">Privacy and Terms</a>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/product-page.js"></script>
+</body>
+</html>
